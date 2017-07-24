@@ -399,6 +399,8 @@ pub fn cascade_list_for_languages(font: &CTFont, language_pref_list: &CFArray) -
     }
 }
 
+// TODO - Remove the warning override once this is solved in core-foundation
+#[allow(improper_ctypes)]
 #[link(name = "ApplicationServices", kind = "framework")]
 extern {
     /*
