@@ -312,6 +312,8 @@ pub fn debug_descriptor(desc: &CTFontDescriptor) {
     desc.show();
 }
 
+// TODO - Remove the warning override once this is solved in core-graphics
+#[allow(improper_ctypes)]
 extern {
     /*
      * CTFontTraits.h
