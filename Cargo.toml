@@ -15,5 +15,6 @@ mountainlion = []
 [dependencies]
 foreign-types = "0.3"
 libc = "0.2"
-core-foundation = "0.4"
+core-foundation = { version = "0.5", git = "https://github.com/faern/core-foundation-rs", branch = "tcftype-ref-as-associated" }
 core-graphics = "0.12.1"
+
